@@ -1,0 +1,16 @@
+.topnav{
+    float: right;
+}
+
+a {
+    text-decoration: underline;
+    font-family: Roboto;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-family: serif;
+}
