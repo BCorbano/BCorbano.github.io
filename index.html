@@ -4,36 +4,40 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
+    <script src="/node_modules/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
-	<title>portfolioLucas v0.1</title>
+	<title>portfolioLucas v0.3</title>
 </head>
 
 <body>
     <div class="topnav">
-        <a href="galeria">Obras</a>
         <a href="perfil"> Sobre</a>
+        <a href="galeria">Obras</a>
         <a href="contato">Contato</a>
     </div>
 
-    <section id="home">
+    <section class="hero">
         <div id="title">
             <h1>Lucas Zofanetti Lima</h1>
-            <p>Artista Plástico</p>
+            <p id="legenda">Artista Plástico</p>
         </div>
     </section>
+
     <section id="galeria">
-        <h2>Destaques</h2>
+        <h2>Destaques</h2>  
         <div id="cardWrap">
-            <div id="cardSacra"></div>
-            <div id="cardRetratos"></div>
-            <div id="cardDiversos"></div>
-            <div id="cardClero"></div>
+            <div id="cardSacra" class="card"></div>
+            <div id="cardRetratos" class="card"></div>
+            <div id="cardDiversos" class="card"></div>
+            <div id="cardClero" class="card"></div>
         </div>    
     </section>
+
     <section id="perfil">
         <h2>Pintor Realista</h2>
         <div id="bioWrap">
@@ -65,6 +69,7 @@
             </div>    
         </div>
     </section>
+    
     <section id="contato">
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST">
             <h2>Entre em contato</h1>
@@ -75,10 +80,12 @@
             <label for="email">Seu melhor E-mail</label>
             <input type="email" name="email" id="email" required>
 
-            <textarea id="subject" name="subject" placeholder="Write something.." 
+            <textarea id="subject" name="subject" placeholder="Digite sua mensagem..." 
                       style="height:39.49074074074074vh "></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" 
+                    class="mdl-button mdl-js-button mdl-button--raised">
+                        Enviar</button>
         </form>
     </section>
 </body>
