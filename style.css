@@ -9,7 +9,11 @@ h1 {
     color: #FCBB4A;
 }
 
-a, h2, p, span, label{
+h3 {
+    font-style:Black;
+}
+
+a, h2, h3, p, span, label{
     font-family: Roboto;
     color: #FFDEAE;
 }
@@ -32,3 +36,21 @@ a {
     filter: drop-shadow(0px 4px 4px #EFBC94);
 }
 
+.card{
+    width: 196px;
+    height: 261px;
+    border-radius: 12px;
+    background-color: #384C2C;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#cardWrap{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
