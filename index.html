@@ -16,9 +16,9 @@
 
 <body>
     <div class="topnav">
-        <a href="perfil"> Sobre</a>
-        <a href="galeria">Obras</a>
-        <a href="contato">Contato</a>
+        <a href="#perfil"> Sobre</a>
+        <a href="#galeria">Obras</a>
+        <a href="#contato">Contato</a>
     </div>
 
     <section class="hero">
@@ -28,38 +28,8 @@
         </div>
     </section>
 
-    <section id="galeria">
-        <h2>Destaques</h2>  
-        <div id="cardWrap">
-            <div id="cardSacra" class="card">
-                <img src="src/img/Sacros-Religiosos/Nossa Senhora do Perpétuo Socorro- ÓLEO SOBRE TELA-Acervo particular.jpg" 
-                    class="cardImg"
-                />
-                <h3>ARTE SACRA</h3>
-            </div>
-            <div id="cardRetratos" class="card">
-                <img src="src/img/Retratos/Caiapó- óleo sobre tela- Prêmio Público Francês- Château de Beauregard- França - 2012- Coleção do artista.JPG"
-                class="cardImg"
-                />
-                <h3>RETRATOS</h3>
-            </div>
-            <div id="cardDiversos" class="card">
-                <img src="src/img/GÊNEROS DIVERSOS/Laranjas- Óleo sobre tela.jpg" 
-                    class="cardImg"
-                />
-                <h3>DIVERSOS</h3>
-            </div>
-            <div id="cardClero" class="card">
-               <img src="src/img/Clero/Sua Santidade Francisco- Entregue ao Papa na Jornada Mundial da Juventude 2013.JPG" 
-                    class="cardImg"
-               />               
-               <h3>CLERO</h3>
-            </div>
-        </div>    
-    </section>
-
     <section id="perfil">
-        <h2>Pintor Realista</h2>
+        <h2 id="perfilTitle">Pintor Realista</h2>
         <div id="bioWrap">
             <div id="bioLeft">
                 <div class="bioItem">
@@ -90,21 +60,51 @@
         </div>
     </section>
 
+    <section id="galeria">
+        <h2 id="destaquesTitle">Destaques</h2>  
+        <div id="cardWrap">
+            <div id="cardSacra" class="card">
+                <img src="src/img/Sacros-Religiosos/Nossa Senhora do Perpétuo Socorro- ÓLEO SOBRE TELA-Acervo particular.jpg" 
+                    class="cardImg"
+                />
+                <h3>ARTE SACRA</h3>
+            </div>
+            <div id="cardRetratos" class="card">
+                <img src="src/img/Retratos/Caiapó- óleo sobre tela- Prêmio Público Francês- Château de Beauregard- França - 2012- Coleção do artista.JPG"
+                class="cardImg"
+                />
+                <h3>RETRATOS</h3>
+            </div>
+            <div id="cardDiversos" class="card">
+                <img src="src/img/GÊNEROS DIVERSOS/Laranjas- Óleo sobre tela.jpg" 
+                    class="cardImg"
+                />
+                <h3>DIVERSOS</h3>
+            </div>
+            <div id="cardClero" class="card">
+               <img src="src/img/Clero/Sua Santidade Francisco- Entregue ao Papa na Jornada Mundial da Juventude 2013.JPG" 
+                    class="cardImg"
+               />               
+               <h3>CLERO</h3>
+            </div>
+        </div>    
+    </section>
+
     <section id="contato">
-        <h2>Entre em contato</h2>
+        <h2 id="contatoTitle">Entre em contato</h2>
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST">
-            <div>
-                <label for="name">Como devo te chamar?</label>
-                <input type="text" name="name" id="name" required>
+            <div class="input">
+                <label for="name" class="inputLabel">Como devo te chamar?</label>
+                <input type="text" name="name" id="name" class="inputItself" required>
             </div>
-            <div>     
-                <label for="email">Seu melhor E-mail</label>
-                <input type="email" name="email" id="email" required>
+            <div class="input">     
+                <label for="email" class="inputLabel">Seu melhor E-mail</label>
+                <input type="email" name="email" id="email" class="inputItself" required>
             </div>
-            <div> 
-                <label for="subject">Mensagem</label>  
+            <div class="input"> 
+                <label for="subject" class="inputLabel">Mensagem</label>  
                 <textarea id="subject" name="subject" placeholder="Digite sua mensagem..." 
-                        style="height:39.49074074074074vh "></textarea>
+                        style="height:39.49074074074074vh" class="inputTextarea"></textarea>
             </div>    
                 <button type="submit" 
                         class="mdl-button mdl-js-button mdl-button--raised">
