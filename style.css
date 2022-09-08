@@ -2,6 +2,12 @@ body{
     background-image: url(src/BG.png);
 }
 
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center   
+}
+
 h1 {
     font-family: 'Libre Baskerville', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: bold;  
@@ -9,7 +15,14 @@ h1 {
     color: #FCBB4A;
 }
 
+h2{
+    font-size: 26px;
+    font-style: ExtraLight;
+    line-height: 16px;
+}
+
 h3 {
+    height: 18.39080459770115%;
     font-style:Black;
 }
 
@@ -36,21 +49,64 @@ a {
     filter: drop-shadow(0px 4px 4px #EFBC94);
 }
 
+#cardWrap{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 8px;
+    grid-row-gap: 7.5px;
+
+    
+}
+
 .card{
     width: 196px;
     height: 261px;
     border-radius: 12px;
     background-color: #384C2C;
 
+    padding-top: 4px;
+    margin-top: 4px;
+
     display:flex;
-    align-items:center;
+    flex-direction: column;
+    text-align:center;
     justify-content:center;
 }
 
-#cardWrap{
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+.cardImg{
+    border-radius: 11px;
+
+    width: 100%;
+    min-height: 81.60919540229885%;
 }
+
+form{
+    width: 384px;
+    height: 530px;
+    
+    background-color: #384C2C;
+    border-radius: 12px;
+}    
+
+#bioLeft {
+    width: 311px;
+    height: 525.73px;
+
+    background-color: #384C2C;
+    border-radius: 12px;  
+}
+
+.bioItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+span{
+    padding-top: 17px;
+}
+
+
+
