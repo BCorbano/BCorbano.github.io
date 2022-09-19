@@ -11,6 +11,11 @@ section{
     height: 100vh;
 }
 
+a, h2, h3, h4, h5, p, span, label{
+    font-family: Roboto;
+    color: #FFDEAE;
+}
+
 h1 {
     font-family: 'Libre Baskerville', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700; 
@@ -22,41 +27,12 @@ h1 {
     backdrop-filter: blur(18px);    
 }
 
-a, h2, h3, h4, h5, p, span, label{
-    font-family: Roboto;
-    color: #FFDEAE;
-}
-
 h2{
     font-size: 26px;
     font-weight: 300;
     line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
-}
-
-#destaquesTitle{
-    font-size: 55px;
-    line-height: 64px;
-
-    left: 125px;
-    top: 67px;
-}
-
-#contatoTitle{
-    font-size: 43px;
-    line-height: 50px;
-
-    left: 85px;
-    top: 72px;
-}
-
-#perfilTitle{
-    font-size: 47px;
-    line-height: 55px;
-
-    left: 95px;
-    top: 70px;
 }
 
 h3 {
@@ -81,19 +57,10 @@ h5{
     letter-spacing: 0.5px;
     text-align: left;
     color: #FCBB4A
+
+    text-decoration: underline;
 }
 
-#detalheDescricao{
-    color:#FFDEAE;
-}
-
-hr{
-    height: 0px;
-    width: 403px;
-    left: 16px;
-    top: 40px;
-    color:#FFDEAE
-}
 
 a {
     font-weight: 400;
@@ -103,6 +70,30 @@ a {
 
 p{
     font-weight: 200;
+}
+
+#destaquesTitle{
+    font-size: 55px;
+    line-height: 64px;
+
+    left: 125px;
+    top: 67px;
+}
+
+#contatoTitle{
+    font-size: 43px;
+    line-height: 50px;
+
+    left: 85px;
+    top: 72px;
+}
+
+#perfilTitle{
+    font-size: 47px;
+    line-height: 55px;
+
+    left: 95px;
+    top: 70px;
 }
 
 #title{
@@ -189,8 +180,30 @@ p{
     height: 570px;
     width: 428px;
 
+    display: flex;
+    flex-direction: column;
+}
+
+.detalhesDescricao{
+    color:#FFDEAE;
+}
+
+.detalhesImg{
+    width: 100%;
+    height: 100%;
+    max-width: 420px;
+    max-height: 442px;
+    aspect-ratio: 210 / 221;
+    border-radius: 11px;
+    margin: 4px;
 
 }
+
+#detalhesPlaceholder{
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
 
 form{
     width: 384px;
