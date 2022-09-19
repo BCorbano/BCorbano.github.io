@@ -22,7 +22,7 @@ h1 {
     backdrop-filter: blur(18px);    
 }
 
-a, h2, h3, h4, p, span, label{
+a, h2, h3, h4, h5, p, span, label{
     font-family: Roboto;
     color: #FFDEAE;
 }
@@ -65,15 +65,35 @@ h3 {
 }
 
 h4{
-        font-size: 20px;
-        font-weight: 900;
-        line-height: 20px;
-        letter-spacing: 0.25px;
-        text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: center;
 
-        align-self: end;
+    align-self: end;
 }
 
+h5{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FCBB4A
+}
+
+#detalheDescricao{
+    color:#FFDEAE;
+}
+
+hr{
+    height: 0px;
+    width: 403px;
+    left: 16px;
+    top: 40px;
+    color:#FFDEAE
+}
 
 a {
     font-weight: 400;
@@ -163,6 +183,13 @@ p{
 .galeriaImg{
     max-width: 143px;
     max-height: 160px; 
+}
+
+#cardDetalhes{
+    height: 570px;
+    width: 428px;
+
+
 }
 
 form{
