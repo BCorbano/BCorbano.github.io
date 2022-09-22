@@ -8,20 +8,25 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <script src="script.js"></script>
 
-    <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”> 
 
 	<title>portfolioLucas v0.3</title>
 </head>
 
 <body>
+    <div id="socialIcons">
+            
+    </div>
+
     <div class="topnav">
         <a href="#perfil"> Sobre</a>
         <a href="#galeria">Obras</a>
         <a href="#contato">Contato</a>
     </div>
 
-    <section class="hero">
+    <section class="hero" id="hero">
+        
         <div id="title">
             <h1>Lucas Zofanetti Lima</h1>
             <p id="legenda">Artista Plástico</p>
@@ -29,7 +34,7 @@
     </section>
 
     <section id="perfil">
-        <i class="material-icons">keyboard_arrow_up</i> 
+        <a href="#hero"><i class="material-icons">keyboard_arrow_up</i></a> 
         <h2 id="perfilTitle">Pintor Realista</h2>
         <div id="bioWrap">
             <div id="bioLeft">
@@ -62,7 +67,7 @@
     </section>
 
     <section id="cardsDestaques">
-        <i class="material-icons">keyboard_arrow_up</i>
+        <a href="#hero"><i class="material-icons">keyboard_arrow_up</i></a>
         <h2 id="destaquesTitle">Destaques</h2>  
         <div id="cardWrap">
             <div id="cardSacra" class="card">
@@ -91,8 +96,8 @@
             </div>
         </div>
     </section>
-    <section>
-        <i class="material-icons">close</i> 
+    <section id="frameGaleria">
+        <a href="#cardsDestaques"><i class="material-icons">close</i></a> 
         <div id="cardGaleria" class="card">
             <div id="galeria">
                 <img src="src/img/Sacros-Religiosos/Ícone de Nossa Senhora- ÓLEO SOBRE TELA - Santuário Nossa Senhora do Silêncio- Londrina-PR.png"
@@ -123,7 +128,10 @@
     </section>
 
     <section>
-        <i class="material-icons">keyboard_arrow_up</i> 
+        <div id="topIcons">
+            <a href="#cardsDestaques"><i class="material-icons">close</i></a>
+            <a href="#frameGaleria"><i class="material-icons">keyboard_arrow_left</i></a> 
+        </div>    
         <div id="cardDetalhes" class="card">
             <div id="detalhesImg">
                 <img src="src/img/Sacros-Religiosos/Nossa Senhora do Perpétuo Socorro- ÓLEO SOBRE TELA-Acervo particular.jpg"
@@ -138,7 +146,7 @@
 
 
     <section id="contato">
-        <i class="material-icons">keyboard_arrow_up</i>
+        <a href="#hero"><i class="material-icons">keyboard_arrow_up</i></a>
         <h2 id="contatoTitle">Entre em contato</h2>
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST">
             <div class="input">

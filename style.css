@@ -63,15 +63,12 @@ h5 {
     text-decoration: underline;
 }
 
-i {
-    align-self: flex-start;
-    
-}
-
 a {
     font-weight: 400;
     font-size: 0.938rem;
     text-decoration:underline;
+
+    align-self: flex-start;
 }
 
 p {
@@ -260,7 +257,7 @@ input{
     border-radius: 0.125rem;    
 }
 
-.input{
+.input {
     display: flex; 
     flex-direction: column;
     
@@ -268,7 +265,7 @@ input{
     gap: 9px;
 }
 
-.inputTextarea{
+.inputTextarea {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -281,13 +278,13 @@ input{
     background: linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11)), #635D57;
 }
 
-::placeholder{
+::placeholder {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.875rem;
 }
 
-button{
+button {
     display: flex;
     flex-direction: row;
     align-items: center;    
@@ -333,7 +330,7 @@ button{
     padding-bottom: 20px;
 }
 
-.bioItem{
+.bioItem {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -342,11 +339,19 @@ button{
     height: 100vh;
 }
 
-span{
+span {
     padding-top: 17px;
 }
 
+#topIcons {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
 
+.fa-facebook, .fa-instagram, .fa-youtube{
+    color: #FFDEAE;
+}
 
 
 
