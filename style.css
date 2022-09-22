@@ -1,8 +1,8 @@
-body{
+body {
     background-image: url(src/BG.png);
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,9 +10,10 @@ section{
 
     max-height: 100vh;
     min-height: 100vh;
+
 }
 
-a, h2, h3, h4, h5, p, span, label, button,::placeholder{
+a, h2, h3, h4, h5, p, i, span, label, button,::placeholder{
     font-family: Roboto;
     color: #FFDEAE;
 }
@@ -20,7 +21,7 @@ a, h2, h3, h4, h5, p, span, label, button,::placeholder{
 h1 {
     font-family: 'Libre Baskerville', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700; 
-    font-size: 38px;  
+    font-size: 2.375rem;  
     line-height: 168%;
     color: #FCBB4A;
 
@@ -28,10 +29,10 @@ h1 {
     backdrop-filter: blur(18px);    
 }
 
-h2{
-    font-size: 26px;
+h2 {
+    font-size: 1.625rem;
     font-weight: 300;
-    line-height: 50px;
+    line-height: 1.625rem;
     letter-spacing: 0em;
     text-align: left;
 }
@@ -41,36 +42,41 @@ h3 {
     font-weight: 900;
 }
 
-h4{
-    font-size: 20px;
+h4 {
+    font-size: 1.25rem;
     font-weight: 900;
-    line-height: 20px;
-    letter-spacing: 0.25px;
+    line-height: 1.25rem;
+    letter-spacing: 0.016rem;
     text-align: center;
 
     align-self: end;
 }
 
-h5{
-    font-size: 16px;
+h5 {
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    letter-spacing: 0.031rem;
     text-align: left;
     color: #FCBB4A;
 
     text-decoration: underline;
 }
 
+i {
+    align-self: flex-start;
+    
+}
 
 a {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 0.938rem;
     text-decoration:underline;
 }
 
 p {
     font-weight: 200;
+    font-size: 115%;
 }
 
 label {
@@ -78,52 +84,52 @@ label {
 }
 
 #destaquesTitle{
-    font-size: 55px;
-    line-height: 64px;
+    font-size: 3.438rem;
+    line-height: 4rem;
 
-    left: 125px;
-    top: 67px;
+    left: 7.813rem;
+    top: 4.188rem;
 }
 
 #contatoTitle{
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 2.688rem;
+    line-height: 3.125rem;
 
-    left: 85px;
-    top: 72px;
+    left: 5.313rem;
+    top: 4.5rem;
 }
 
 #perfilTitle{
-    font-size: 47px;
-    line-height: 55px;
+    font-size: 2.938rem;
+    line-height: 3.438rem;
 
-    left: 95px;
-    top: 70px;
+    left: 5.938rem;
+    top: 4.375rem;
 }
 
 #title{
     background-color: #384C2C;
     opacity: 75%;
-    filter: drop-shadow(0px 4px 4px #EFBC94);
+    filter: drop-shadow(0px 0.46893317702227vh 0.25rem #EFBC94);
 
     text-align: center;
 
     width: 100vw;
-    height: 171px;
+    height: 20.04689331770223vh;
     left: 0px;
-    top: 350px;
+    top: 21.875rem;
 }
 
 #legenda{
-    font-size: 35px;
-    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2.188rem;
+    text-shadow: 0.20746887966805vw 0.46893317702227vh 0.25rem rgba(0, 0, 0, 0.25);
     
 }
 
 
 #cardWrap{
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 12.5rem 12.5rem;
     grid-row: auto auto;
     grid-column-gap: 8px;
     grid-row-gap: 7.5px;
@@ -229,16 +235,16 @@ form{
 }    
 
 #input1{
-    font-size: 26px;
-    line-height: 16px;
+    font-size: 1.625rem;
+    line-height: 1rem;
 }
 #input2{
-    font-size: 28px;
-    line-height: 24px;
+    font-size: 1.75rem;
+    line-height: 1.5rem;
 }
 #input3{
-    font-size: 30px;
-    line-height: 24px;
+    font-size: 1.875rem;
+    line-height: 1.5rem;
 }
 
 input{
@@ -250,8 +256,8 @@ input{
     left: 93px;
     top: 222.6px;
 
-    border: 1px solid #BFA887;
-    border-radius: 2px;    
+    border: 0.063rem solid #BFA887;
+    border-radius: 0.125rem;    
 }
 
 .input{
@@ -276,9 +282,9 @@ input{
 }
 
 ::placeholder{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 1.875rem;
 }
 
 button{
@@ -339,6 +345,8 @@ button{
 span{
     padding-top: 17px;
 }
+
+
 
 
 
