@@ -109,7 +109,19 @@ label {
     top: 4.375rem;
 }
 
+#socialIcons {
+    align-self: flex-start;
+}
+
+nav{
+    align-self: flex-end;
+    display: block;
+   
+}
+
+
 #title{
+
     background-color: #384C2C;
     opacity: 75%;
     filter: drop-shadow(0px 0.46893317702227vh 0.25rem #EFBC94);
@@ -364,10 +376,6 @@ span {
     color: #FFDEAE;
     font-size: 4.22039859320047vh;
     padding-right: 1.8rem;
-}
-
-#socialIcons {
-    margin-top: 824px;
 }
 
 #btnIcon{
