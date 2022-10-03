@@ -71,9 +71,13 @@ h5 {
 a {
     font-weight: 400;
     font-size: 0.938rem;
-    text-decoration:underline;
+    text-decoration: underline;
 
     align-self: flex-start;
+}
+
+.cardA{
+    text-decoration: none;
 }
 
 .fa-brands {
@@ -283,6 +287,14 @@ input{
 
     border: 0.063rem solid #BFA887;
     border-radius: 0.125rem;    
+
+    font-size: 1.45rem;
+    color:#FFDEAE;
+    padding-left: 1rem;
+}
+
+input, textarea:focus {
+	outline: none;
 }
 
 .input {
@@ -304,6 +316,11 @@ input{
     border-radius: 0.125rem; 
 
     background: linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11)), #635D57;
+
+    font-size: 1.45rem;
+    color:#FFDEAE;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
 }
 
 ::placeholder {
@@ -333,6 +350,10 @@ button {
     box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
     filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.3)); 
     
+}
+
+button:hover {
+    background: #384C2C radial-gradient(circle, transparent 1%, #635D57 1%) center/15000%;
 }
 
 #submit {
@@ -423,6 +444,7 @@ span {
 #btnIcon{
     font-size: small;
     padding-right: 2vw;
+    padding-left: 1vw;
 }
 
 
