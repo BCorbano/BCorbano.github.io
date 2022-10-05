@@ -163,15 +163,7 @@ nav{
 }
 
 
-#cardWrap{
-    display: grid;
-    grid-template-columns: 12.5rem 12.5rem;
-    grid-row: auto auto;
-    grid-column-gap: 8px;
-    grid-row-gap: 7.5px;
 
-    
-}
 
 .card{
     width: 196px;
@@ -188,27 +180,37 @@ nav{
     justify-content:center;
 }
 
-.cardImg{
-    border-radius: 11px;
-
-    width: 100%;
-    min-height: 81.60919540229885%;
-}
-
 .cardGaleria{
-    width: 434px;
-    height: 578px;
+    width: 66.25954198473282vw;
+    height: 67.76084407971864vh;
 
     align-self: center;
+    transform: translate(-3vw, 0);
 
     display: grid;
+
+    overflow-y: auto;
 }
 
-#galeria{
-    grid-auto-flow: dense;
-    height: 524px;
-    width: 430px;
-    border-radius: 8px;
+#glassCard{
+    height: 58vh;
+    width: 98%;
+
+    align-self: flex-end;
+    margin-bottom: 3vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+
+    background: rgba(191, 168, 135, 0.24);
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(191, 168, 135, 0.3);
+}
+
+.galeriaSelected {
+    
 }
 
 #galeriaPlaceholder{
@@ -221,8 +223,11 @@ nav{
 }
 
 .galeriaImg{
-    max-width: 143px;
-    max-height: 160px; 
+    width: 18.42942345924453vw;
+    height: 18.75732708089097vh; 
+
+    border-radius: 3%;
+    border: #FFDEAE 1px solid;
 }
 
 #cardDetalhes{
