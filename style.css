@@ -4,6 +4,8 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    overflow-x: hidden;
 }
 
 section {
@@ -13,6 +15,7 @@ section {
     justify-content: center;   
 
     height: 100vh;
+    max-width: 100vw;
 }
 
 a, h2, h3, h4, h5, p, i, span, label, button,::placeholder{
@@ -192,9 +195,11 @@ nav{
     min-height: 81.60919540229885%;
 }
 
-#cardGaleria{
+.cardGaleria{
     width: 434px;
     height: 578px;
+
+    align-self: center;
 
     display: grid;
 }
