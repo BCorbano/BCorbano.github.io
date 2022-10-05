@@ -8,6 +8,19 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+  outline: 1px solid #FFDEAE;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -132,7 +145,7 @@ label {
     transform: translate(0, 30vh);
 }
 
-nav{
+#navIndex{
     align-self: flex-end;
     display: block;
     
@@ -180,7 +193,7 @@ nav{
     justify-content:center;
 }
 
-.cardGaleria{
+.cardGaleria {
     width: 66.25954198473282vw;
     height: 67.76084407971864vh;
 
@@ -189,31 +202,51 @@ nav{
 
     display: grid;
 
-    overflow-y: auto;
 }
 
-#glassCard{
+#glassCard {
     height: 58vh;
     width: 98%;
+    overflow-y: auto;
 
     align-self: flex-end;
     margin-bottom: 3vh;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
 
-    background: rgba(191, 168, 135, 0.24);
+    background: rgba(191, 168, 135, 0.44);
     border-radius: 0.2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-    border: 1px solid rgba(191, 168, 135, 0.3);
+    border: 1px solid rgba(235, 164, 65, 0.3);
 }
 
-.galeriaSelected {
-    
+#navCard {
+    display: flex;
+
+    padding-left: 0.2vw;
+    padding-right: 1vw;
+    margin: 2%;
+    white-space: nowrap;    
+
+    overflow: hidden;
+    border-radius: 0.4rem;
+    background-color: #9b3d1124;
 }
 
-#galeriaPlaceholder{
+.navCardItem {
+    width: 25%;
+    cursor: pointer;
+    align-self: center;
+
+    margin: 0.5%;
+    padding: 5%;
+    border-radius: 0.45rem;
+    background-color: rgba(191, 168, 135, 0.24);
+}
+
+#galeriaPlaceholder {
     height: 52px;
     width: 434px;
     padding: 16px; 
@@ -222,15 +255,15 @@ nav{
     align-self: flex-end;
 }
 
-.galeriaImg{
-    width: 18.42942345924453vw;
+.galeriaImg {
+    width: 19.42942345924453vw;
     height: 18.75732708089097vh; 
 
     border-radius: 3%;
     border: #FFDEAE 1px solid;
 }
 
-#cardDetalhes{
+#cardDetalhes {
     height: 570px;
     width: 428px;
 
@@ -238,11 +271,11 @@ nav{
     flex-direction: column;
 }
 
-.detalhesDescricao{
+.detalhesDescricao {
     color:#FFDEAE;
 }
 
-.detalhesImg{
+.detalhesImg {
     width: 100%;
     height: 100%;
     max-width: 420px;
