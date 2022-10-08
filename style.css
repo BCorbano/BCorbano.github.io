@@ -153,7 +153,7 @@ label {
 }
 
 
-#title{
+.title{
 
     background-color: #384C2C;
     opacity: 75%;
@@ -174,9 +174,6 @@ label {
     margin-top: 1vh;
     
 }
-
-
-
 
 .card{
     width: 196px;
@@ -222,6 +219,18 @@ label {
     border: 1px solid rgba(235, 164, 65, 0.3);
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    max-width: 25%;
+}
+
+li {
+    display: none;
+}
+
 #navCard {
     display: flex;
 
@@ -235,7 +244,7 @@ label {
     background-color: #9b3d1124;
 }
 
-.navCardItem {
+.navCardItem{
     width: 25%;
     cursor: pointer;
     align-self: center;

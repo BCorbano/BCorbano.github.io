@@ -20,7 +20,7 @@
                 <a href="#galeria">Obras</a>
                 <a href="#contato">Contato</a>   
             </nav>
-            <div id="title">
+            <div class="title">
                 <h1>Lucas Zofanetti Lima</h1>
                 <p id="legenda">Artista Plástico</p>
             </div>
@@ -69,10 +69,25 @@
         <h2 id="destaquesTitle">Destaques</h2>  
                 <div class="card cardGaleria">
                     <nav id="navCard"> 
-                        <p class="navCardItem">Arte Sacra</p>
-                        <p class="navCardItem">Clero</p>
-                        <p class="navCardItem">Diversos</p>
-                        <p class="navCardItem">Retratos</p>
+                        <ul>
+                            <li class="navCardItem">
+                                <input type="radio" name="tabs" class="tab" id='tab1' checked>
+                                <label for="tab1">Arte Sacra</label>
+                            </li>
+                            <li class="navCardItem">
+                                <input type="radio" name="tabs" id='tab2'>
+                                <label for="tab2">Clero</label>
+                            </li>
+                            <li class="navCardItem">
+                                <input type="radio" name="tabs" id='tab3'>
+                                <label for="tab3">Diversos</label>
+                            </li>
+                            <li class="navCardItem">
+                                <input type="radio" name="tabs" id='tab4'>
+                                <label for="tab4">Retratos</label>
+                            </li>    
+                            
+                        </ul>    
                     </nav>  
                     <div id="glassCard">
                         <div id="galeriaSacra" class="galeriaSelected">
@@ -190,11 +205,13 @@
     <section id="contato">
         <a href="#hero"><i class="fa-solid fa-chevron-up"></i></a> 
         <h2 id="contatoTitle">Entre em contato</h2>
+        <!-- Alterar action e input hidden no deploy -->
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST">
             <div class="input">
                 <label for="name" id="input1">Como devo te chamar?</label>
                 <input type="text" name="name" id="name" required>
             </div>
+            <input type="hidden" name="_next" value="https://bcorbano.github.io/thanks.html">
             <div class="input">     
                 <label for="email" id="input2">Seu melhor E-mail</label>
                 <input type="email" name="email" id="email" required>
