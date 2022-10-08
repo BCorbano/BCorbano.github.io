@@ -292,11 +292,11 @@ label {
 }
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.99296600234467vh;
+    padding-top: 3.99296600234467vh;
     padding-bottom: 4.08997955010225vh;
 
     margin-top: 4.49897750511247vh;
