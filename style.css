@@ -201,10 +201,11 @@ label {
 
 }
 
-#glassCard {
+.glassCard {
     height: 58vh;
     width: 98%;
     overflow-y: auto;
+    display: none;
 
     align-self: flex-end;
     margin-bottom: 3vh;
@@ -217,6 +218,10 @@ label {
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
     border: 1px solid rgba(235, 164, 65, 0.3);
+}
+
+.tab:checked ~ .glassCard {
+    display: block; 
 }
 
 ul {
@@ -233,6 +238,7 @@ li {
 
 #navCard {
     display: flex;
+    height: 100%;
 
     padding-left: 0.2vw;
     padding-right: 1vw;
