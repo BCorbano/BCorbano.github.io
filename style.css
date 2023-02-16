@@ -110,9 +110,9 @@ a {
 }
 
 p {
+    
     font-weight: 200;
-    font-size: 115%;
-
+    font-size: 1.25rem;
     padding-right: 5vw;
 }
 
@@ -207,6 +207,9 @@ label {
     flex-direction: column;
     text-align:center;
     justify-content:center;
+
+    width: 92.741593969679vw;
+    height: 67.87807737397421vh;
 }
 
 .cardGaleria {
@@ -357,9 +360,6 @@ form {
     padding-bottom: 4.08997955010225vh;
 
     margin-top: 4.49897750511247vh;
-
-    height: 62.13364595545135%;
-    width: 78.52760736196319vw;
     
     background-color: #384C2C;
     border-radius: 0.75rem;
@@ -466,28 +466,16 @@ button:hover {
 
 }
 
-#bioWrap{
+.cardBio{
     display: flex;
 
-    max-width: 100%;
+    width: 66.24248327263488vw;
 }
 
 
 #bioLeft {
-    display: flex;
-    flex-direction: column;
-
-    width: 63.59918200408998vw;
-    height: 61.63305978898007vh;
-
-    background-color: #384C2C;
-    box-shadow: inset 5px 1px 6px rgba(0, 0, 0, 0.25);    
-    border-radius: 0.75rem;
     
-    padding-left: 3.88548057259714vw;
-    padding-right: 2.04498977505112vw;
-    padding-bottom: 2.34466588511137vh;
-
+    
     
 }
 
@@ -495,6 +483,8 @@ button:hover {
     box-sizing: border-box;
 
     width: 30.07975460122699vw;
+
+    
 }
 
 #imgPerfil {
@@ -512,9 +502,8 @@ button:hover {
     text-align: center;
     gap: 0.5rem;
 
-    
     max-height: inherit;
-    height: 100vh;
+ 
 
 }
 
