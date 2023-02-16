@@ -466,16 +466,26 @@ button:hover {
 
 }
 
+.line {
+    height: 1px;
+    background: #FFDEAE;
+    
+    margin-right: 6.27694757347336vw;
+    margin-left: 6.21564156856102vw;
+}
+
 .cardBio{
     display: flex;
 
     width: 66.24248327263488vw;
 }
 
+#bioWrap {
+    display: flex;
+    align-items: center;
+}
 
 #bioLeft {
-    
-    
     
 }
 
@@ -484,8 +494,10 @@ button:hover {
 
     width: 30.07975460122699vw;
 
-    
+
 }
+
+
 
 #imgPerfil {
     width: 92.02453987730061vw;
@@ -502,9 +514,9 @@ button:hover {
     text-align: center;
     gap: 0.5rem;
 
-    max-height: inherit;
+    max-height: 30vh;
  
-
+    margin-left: 3.81129838231558vw;
 }
 
 span {
