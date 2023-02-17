@@ -365,25 +365,12 @@ form {
     border-radius: 0.75rem;
 }    
 
-#input1{
-    font-size: 1.625rem;
-    line-height: 1rem;
-}
-#input2{
-    font-size: 1.75rem;
-    line-height: 1.5rem;
-}
-#input3{
-    font-size: 1.875rem;
-    line-height: 1.5rem;
-}
-
 input{
     box-sizing: border-box;
     background: transparent;
     
-    width: 64.0081799591002vw;
-    height: 5.74794841735053vh;
+    width: 75.59498602523926vw;
+    height: 6.22391559202814vh;
 
     border: 0.063rem solid #BFA887;
     border-radius: 0.125rem;    
@@ -401,8 +388,15 @@ input, textarea:focus {
     display: flex; 
     flex-direction: column;
     
-    margin-bottom: 3.04806565064478vh;
-    gap: 0.5625rem;
+    
+    gap: 0.625rem;
+}
+
+.inputLabel {
+    font-weight: 200;
+    font-size: 1.625rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.03125rem;
 }
 
 .inputTextarea {
@@ -411,8 +405,8 @@ input, textarea:focus {
     align-items: flex-end;
     padding: 0;    
 
-    width: 64.0081799591002vw;
-    max-height: 22.16998827667057vh;
+    width: 74.07046667231303vw;
+    max-height: 21.94021101992966vh;
     border-radius: 0.125rem; 
 
     background: linear-gradient(0deg, rgba(103, 80, 164, 0.11), rgba(103, 80, 164, 0.11)), #635D57;
@@ -437,13 +431,14 @@ button {
     cursor: pointer;
 
     align-self: flex-end;
-    margin-right: 6.5439672801636vw;
+    margin: 1.17233294255569vh;
+    margin-right: 7.83433556364868vw;
 
-    height: 5.33708659593553vh;
-    width: 18.85172370021329vw;
+    height: 6.56506447831184vh;
+    width: 25.40865588210384vw;
     border-radius: 0.6875rem;
     border: 0;
-    padding: 1rem, 1.25rem, 1rem, 1rem;
+    
 
     background: linear-gradient(0deg, rgba(208, 188, 255, 0.11), rgba(208, 188, 255, 0.11)), #635C5F;
     
@@ -457,13 +452,12 @@ button:hover {
 }
 
 #submit {
-    
     text-transform: uppercase;
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: 0.0062500009313226rem;
-
+    align-self: center;
 }
 
 .line {
@@ -543,9 +537,9 @@ span {
 }
 
 #btnIcon{
-    font-size: small;
-    padding-right: 2vw;
-    padding-left: 1vw;
+    font-size: medium;
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 
 

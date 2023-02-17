@@ -10,6 +10,8 @@
 
     <script src="https://kit.fontawesome.com/dfee039d96.js" crossorigin="anonymous"></script>
 
+    
+
 	<title>portfolioLucas v0.7</title>
 </head>
 
@@ -184,24 +186,29 @@
         <h2 id="contatoTitle">Entre em contato</h2>
         <!-- Alterar action e input hidden no deploy -->
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST" class="card">
+            <div class="input">    
+                <label for="subject" class="inputLabel">De que se trata?</label>
+                <input class="mdc-line-ripple" id="subject">
+            </div>
             <div class="input">
-                <label for="name" id="input1">Como devo te chamar?</label>
-                <input type="text" name="name" id="name" required>
+                <label for="name" class="inputLabel">Como devo te chamar?</label>
+                <input type="text" class="mdc-line-ripple" name="name" id="name" required>
             </div>
             <div class="input">     
                 <input type="hidden" name="_next" value="https://bcorbano.github.io/thanks.html">
-                <label for="email" id="input2">Seu melhor E-mail</label>
-                <input type="email" name="email" id="email" required>
+                <label for="email" class="inputLabel">Seu melhor E-mail</label>
+                <input type="email" class="mdc-line-ripple" name="email" id="email" required>
             </div>
             <div class="input"> 
-                <label for="subject" id="input3">Mensagem</label>  
-                <textarea id="subject" name="subject" placeholder="Digite sua mensagem..." 
-                        style="height:39.49074074074074vh" class="inputTextarea"></textarea>
+                <label for="message" class="inputLabel">Mensagem</label>  
+                <textarea id="subject" name="message" placeholder="Digite sua mensagem..." 
+                        style="height:39.49074074074074vh" class="inputTextarea mdc-text-field__input"></textarea>
             </div>    
                 <button type="submit" 
-                        class="">
+                        class="mdc-button mdc-button--raised mdc-button--leading">
+                        <span class="mdc-button__ripple"></span>
                         <i class="fa-solid fa-pen" id="btnIcon"></i>
-                            <p id="submit">Enviar</p></button>
+                            <p class="mdc-button__label" id="submit">Enviar</p></button>
         </form>
         <div class="socialIcons">
             <a href="https://www.facebook.com/lucas.z.lima/" target="_blank" class="fa-brands fa-facebook"></a>
