@@ -186,9 +186,19 @@
         <h2 id="contatoTitle">Entre em contato</h2>
         <!-- Alterar action e input hidden no deploy -->
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST" class="card">
-            <div class="input">    
+            <div class="input dropdown">    
                 <label for="subject" class="inputLabel">De que se trata?</label>
-                <input class="mdc-line-ripple" id="subject">
+                <input class="mdc-menu mdc-menu-surface" id="subject">
+                <ul class="mdc-list">
+                    <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                    <li class="mdc-list-item" tabindex="0">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Single-line item</span>
+                    </li>
+                </ul>
             </div>
             <div class="input">
                 <label for="name" class="inputLabel">Como devo te chamar?</label>

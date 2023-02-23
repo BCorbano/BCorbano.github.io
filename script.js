@@ -1,9 +1,12 @@
 import {MDCTextField} from '@material/textfield';
 import {MDCRipple} from '@material/ripple';
+import {MDCMenu} from '@material/menu';
 
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 MDCRipple(document.querySelector('.mdc-button'));
+const menu = new MDCMenu(document.querySelector('.mdc-menu'));
+menu.open = true;
 
 let cardSacra = document.getElementById('cardSacra')
 let cardRetratos = document.getElementById('cardRetratos');
