@@ -487,6 +487,8 @@ button:hover {
     box-sizing: border-box;
 
     width: 30.07975460122699vw;
+    height: 60.02344665885111vh;
+    position: relative;
 
 
 }
@@ -508,9 +510,14 @@ button:hover {
     text-align: center;
     gap: 0.5rem;
 
-    max-height: 30vh;
+    height: 19.10550996483001vh;
  
     margin-left: 3.81129838231558vw;
+}
+
+.bioText {
+    font-size: 1.25rem;
+    font-stretch: expanded;
 }
 
 span {
