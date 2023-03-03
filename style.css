@@ -42,7 +42,7 @@ a, h2, h3, h4, h5, p, i, span, label, button,::placeholder{
 }
 
 h1 {
-    font-family: 'Palatino Linotype', serif;
+    font-family: 'Lobster', serif;
     font-style: bold;
     font-weight: 700; 
     font-size: 2.75em;  
@@ -525,9 +525,9 @@ span {
     font-size: 1.6875rem;
 }
 
-.fa-xmark, .fa-chevron-left, .fa-chevron-up {
-    font-size: 5vh;
-    padding-left: 1%;
+.fa-xmark, .fa-chevron-left {
+    font-size: 6.5vh;
+    padding-left: 80%;
     margin-right: 2vw;
 }
 
