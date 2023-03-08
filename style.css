@@ -181,7 +181,7 @@ label {
     
 }
 
-.card{
+.card {
     border-radius: 0.75rem;
     background-color: #384C2C;
 
@@ -550,6 +550,11 @@ span {
     transform: translate(0, -32vh);
 }
 
+#appointmentCard {
+    width: 89.14203438638096vw;
+    height: 43.72801875732708vh;
+}
+
 #navFooter {
     display: flex;
     flex-direction: column;
@@ -562,6 +567,16 @@ span {
     margin: auto;
     bottom: 0;
     position: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#footerUp {
+    
+}
+#footerDown {
+
 }
 
 #newsletterCard {
