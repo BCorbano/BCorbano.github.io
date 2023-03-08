@@ -123,7 +123,7 @@ label {
     border-radius: 15%;
 }
 
-#destaquesTitle{
+#destaquesTitle {
     font-size: 3.438rem;
     line-height: 4rem;
 
@@ -131,7 +131,7 @@ label {
     top: 4.188rem;
 }
 
-#contatoTitle{
+#contatoTitle {
     font-size: 2.688rem;
     line-height: 3.125rem;
 
@@ -139,27 +139,12 @@ label {
     top: 4.5rem;
 }
 
-#perfilTitle{
+#perfilTitle {
     font-size: 2.938rem;
     line-height: 3.438rem;
 
     left: 5.938rem;
     top: 4.375rem;
-}
-
-.socialIcons {
-    align-self: flex-start;
-}
-
-#heroSocial{
-    transform: translate(0, 30vh);
-}
-
-#navIndex{
-    align-self: flex-end;
-    display: block;
-    
-    transform: translate(0, -32vh);
 }
 
 .blocoHero {
@@ -504,8 +489,6 @@ button:hover {
 
 }
 
-
-
 #imgPerfil {
     width: 92.02453987730061vw;
     height: 61.63305978898007vh;
@@ -558,6 +541,76 @@ span {
     font-size: medium;
     padding-right: 3vw;
     padding-left: 3vw;
+}
+
+#navIndex {
+    align-self: flex-end;
+    display: block;
+    
+    transform: translate(0, -32vh);
+}
+
+#navFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #5F6232; 
+    width: 100vw;
+    height: 50vh;   
+    margin: auto;
+    bottom: 0;
+    position: fixed;
+}
+
+#newsletterCard {
+    width: 79.40204963157449vw;
+    height: 14.41969519343494vw;
+}
+#newsletterL {
+    text-transform: uppercase;
+}
+#newsletterEmail {
+    width: 47.64122977894469vw;
+    height: 6.21336459554513vh;
+}
+#newsletterSubmit {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 18%;
+}
+
+.social{
+    display: flex;
+}
+
+#navP {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.navA {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#redesP {
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+#creditP {
+    font-weight: 200;
+    text-align: center;
+}
+
+hr {
+    width: 79.40204963157449vw;    
+    border-color: #FFDEAE;
 }
 
 
