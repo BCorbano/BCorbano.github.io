@@ -21,11 +21,15 @@
         <h2 id="contatoTitle">Entre em contato</h2>
         <!-- Alterar action e input hidden no deploy -->
         <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST" class="card">
-            <div class="input dropdown mdc-menu mdc-menu-surface"">    
+            <div class="input dropdown mdc-menu mdc-menu-surface">    
                 <label for="subject" class="inputLabel">De que se trata?</label>
-                <input class="dropdownInput.tokens" id="subject">
-                
+                <select class="" id="subject">
+                    <option value="encomenda">Encomendar Obra</option>
+                    <option value="pergunta">Perguntar algo</option>
+                    <option value="outro">Outro motivo</option>
+                </select>    
             </div>
+
             <div class="input">
                 <label for="name" class="inputLabel">Como devo te chamar?</label>
                 <input type="text" class="mdc-line-ripple" name="name" id="name" required>
