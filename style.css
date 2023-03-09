@@ -58,6 +58,9 @@ h1 {
 }
 
 h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
     font-size: 1.625rem;
     font-weight: 300;
     line-height: 1.625rem;
@@ -124,27 +127,33 @@ label {
 }
 
 #destaquesTitle {
-    font-size: 3.438rem;
+    font-size: 4.0625rem;
     line-height: 4rem;
 
-    left: 7.813rem;
-    top: 4.188rem;
+    position: absolute;
+    bottom: 89.44900351699883vh;
+
 }
 
 #contatoTitle {
-    font-size: 2.688rem;
+    font-size: 2.9375rem;
     line-height: 3.125rem;
 
-    left: 5.313rem;
-    top: 4.5rem;
+    position: absolute;
+    top: 3.98593200468933vh;
 }
 
 #perfilTitle {
-    font-size: 2.938rem;
+    font-size: 3.4375rem;
     line-height: 3.438rem;
 
+    position: absolute;
     left: 5.938rem;
-    top: 4.375rem;
+    bottom: 89.44900351699883vh;
+}
+
+#setaPerfil {
+    right: 85.98898958245109vw;
 }
 
 .blocoHero {
@@ -185,8 +194,7 @@ label {
     border-radius: 0.75rem;
     background-color: #384C2C;
 
-    padding-top: 4px;
-    margin-top: 4px;
+    margin-top: 6.21336459554513vh;
 
     display:flex;
     flex-direction: column;
@@ -194,15 +202,15 @@ label {
     justify-content:center;
 
     width: 92.741593969679vw;
-    height: 67.87807737397421vh;
+    height: 73.15357561547479vh;
 }
 
 .cardGaleria {
-    width: 78.52760736196319vw;
-    height: 67.76084407971864vh;
+    width: 92.741593969679vw;
+    height: 73.27080890973036vh;
 
     align-self: center;
-    transform: translate(-3vw, 0);
+
 
 }
 
@@ -468,6 +476,10 @@ button:hover {
     display: flex;
 
     width: 66.24248327263488vw;
+    height: 73.27080890973036vh;
+
+    bottom: 12.42672919109027vh;
+    left: 38.1129838231558vw;
 }
 
 #bioWrap {
@@ -485,6 +497,7 @@ button:hover {
     width: 30.07975460122699vw;
     height: 60.02344665885111vh;
     position: relative;
+    bottom: -8.11289683470105vh;
 
 
 }
@@ -493,7 +506,7 @@ button:hover {
     width: 92.02453987730061vw;
     height: 61.63305978898007vh;
 
-    transform: translate(-17.26190476190476vw , 2.06825232678387vh);
+    transform: translate(-17.26190476190476vw , 0);
     
 }
 
@@ -519,10 +532,14 @@ span {
     font-size: 1.6875rem;
 }
 
-.fa-xmark, .fa-chevron-left {
+.fa-xmark, .fa-chevron-left, .fa-chevron-up {
     font-size: 6.5vh;
     padding-left: 80%;
     margin-right: 2vw;
+
+    position: absolute;
+    bottom: 89.44900351699883vh;
+    right: 85.741593969679vw;
 }
 
 #topIcons {
