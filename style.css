@@ -358,13 +358,16 @@ form {
     border-radius: 0.75rem;
 }
 
-select {
-    appearance: none;
-    -moz-appearance: none;
+ #subject {
     -webkit-appearance: none;
-    padding-right: 1rem;
-
-}
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url('/src/dropArrowIcon.png');
+	background-position: 98% center;
+	background-repeat:repeat;
+	outline: none;
+ }
 
 option {
     background-color: #384C2C;
@@ -512,6 +515,7 @@ button:hover {
 
 .bioItem {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
@@ -523,8 +527,9 @@ button:hover {
 }
 
 .bioText {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-stretch: expanded;
+    text-align: left;
 }
 
 span {
@@ -540,6 +545,11 @@ span {
     position: absolute;
     bottom: 89.44900351699883vh;
     right: 85.741593969679vw;
+}
+
+#setaFooter {
+    bottom: 44.54865181711606vh;
+    right: 89.41246718048615vw;
 }
 
 #topIcons {
@@ -587,18 +597,21 @@ span {
 
     display: flex;
     flex-direction: column;
+
 }
 
 #footerUp {
-    
+
 }
 #footerDown {
-
+    display: grid;
 }
 
 #newsletterCard {
     width: 79.40204963157449vw;
-    height: 14.41969519343494vw;
+    height: 14.41969519343494vh;
+    margin-top: 0;
+
 }
 #newsletterL {
     text-transform: uppercase;
