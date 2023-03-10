@@ -122,8 +122,8 @@ p {
 label {
     font-weight: 280;
     position: relative;
-    left: -5vw;
     border-radius: 15%;
+    text-align: center;
 }
 
 #destaquesTitle {
@@ -224,7 +224,9 @@ label {
 }
 
 .tab:checked ~ .glassCard {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+ 
 }
 
 .glassCard {
@@ -232,9 +234,10 @@ label {
     position: absolute;
     right: 3.1vw;
     top: 7vh;
+    margin: 0; 
 
-    height: 58vh;
-    width: 98%;
+    height: 67.64361078546307vh;
+    width: 100%;
     overflow-y: auto;
 
     align-self: flex-end;
@@ -254,24 +257,25 @@ ul {
     padding-inline-start: 0;
 
     transform: translate(-0.3vw, 0);
+
+    display: flex;
+    margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 #navCard ul {
     list-style: none;
-    display: flex;
-    width: 80vw;
 }
 
-#navCard ul li {
-   float: left;
-
-}
 
 #navCard label {
     display: block;
     width: 22vw;
     padding: 1%;
     cursor: pointer;
+
+    position: absolute;
+    top: 1.28vh;
 }
 
 
@@ -289,15 +293,15 @@ ul {
 }
 
 .navCardItem{
-    width: 12vw;
+    width: 25vw;
+    height: 5.62719812426729vh;
     cursor: pointer;
     align-self: center;
+    margin-right: 0;
 
-    margin: 0.5%;
-    padding: 4%;
-    border-radius: 0.45rem;
-    background-color: rgba(191, 168, 135, 0.24);
+    text-transform: uppercase;
 }
+
 
 #galeriaPlaceholder {
     height: 52px;
@@ -312,8 +316,7 @@ ul {
     width: 19.42942345924453vw;
     height: 18.75732708089097vh; 
 
-    border-radius: 3%;
-    border: #FFDEAE 1px solid;
+    border-radius: 8%;
 }
 
 #cardDetalhes {
