@@ -27,12 +27,11 @@
     <div class="footer">
         <div id="footerUp">
             <a href="index.html"><i class="fa-solid fa-chevron-up" id="setaFooter"></i>n ta funcionando ainda</a> 
-            <div class="card" id="newsletterCard">
                 <!-- Alterar action e input hidden no deploy -->
-                <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST" class="card">
+                <form action="https://formsubmit.co/bcorbano@gmail.com" method="POST" class="card" id="newsletterCard">
                     <div class="input">     
                         <input type="hidden" name="_next" value="https://bcorbano.github.io/thanks.html">
-                        <label for="email" class="inputLabel" id="newsletterL">Receba a Arte por email:</label>
+                        <label for="email" class="inputLabel" id="newsletterLabel">Receba a Arte por email:</label>
                         <input type="email" class="mdc-line-ripple" name="email" id="newsletterEmail" required>
                     </div>
                     <button type="submit" 
@@ -41,7 +40,6 @@
                             <p class="mdc-button__label" id="newsletterSubmit">Cadastrar</p>
                     </button>
                 </form>
-            </div>
         </div>    
         <div id="footerDown">
             <nav id="navFooter">

@@ -591,33 +591,46 @@ span {
 }
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
     background-color: #5F6232; 
     width: 100vw;
     height: 50vh;   
     margin: auto;
     bottom: 0;
     position: fixed;
-
-    display: flex;
-    flex-direction: column;
-
 }
 
 #footerUp {
+    background-color: #efef64;
 
+    display: flex;
+    height: 25vh;
 }
 #footerDown {
+
     display: grid;
+    height: 25vh;
 }
 
 #newsletterCard {
     width: 79.40204963157449vw;
     height: 14.41969519343494vh;
-    margin-top: 0;
+    padding: 0;
+    margin-top: auto;
+    
+    
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
-#newsletterL {
+#newsletterLabel {
     text-transform: uppercase;
+    text-align: center;
 }
 #newsletterEmail {
     width: 47.64122977894469vw;
@@ -627,7 +640,7 @@ span {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
-    margin: 0 auto;
+    margin: 0;
     text-align: center;
     padding-left: 18%;
 }
