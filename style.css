@@ -552,7 +552,7 @@ span {
 
 #setaFooter {
     bottom: 44.54865181711606vh;
-    right: 89.41246718048615vw;
+    right: 89.98898958245109vw;
 }
 
 #topIcons {
@@ -580,9 +580,47 @@ span {
     transform: translate(0, -32vh);
 }
 
+#footerSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#appointment {
+    height: 50vh;
+    width: 100vw;
+    margin-bottom: auto;
+}
+
 #appointmentCard {
     width: 89.14203438638096vw;
     height: 43.72801875732708vh;
+    padding-right: 6.35216397052596vw;
+    padding-bottom: 3.98593200468933vh;
+    margin-top: 0;
+}
+
+.appointmentPhoto {
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 19.85051240789363vw;
+    height: 15.65416178194607vh;
+}
+
+.appointmentName {
+    color: #FCBB4A;
+    line-height: 2.1975em;
+    font-size: 1.875em;
+}
+
+.appointmentTitle {
+    line-height: 1.318125em;
+    font-size: 1.125em;
+}
+
+.appointmentP {
+    line-height: 1.904375em;
+    font-size: 1.625em;
 }
 
 #navFooter {
@@ -604,24 +642,24 @@ span {
 }
 
 #footerUp {
-    background-color: #efef64;
 
     display: flex;
     height: 25vh;
 }
 #footerDown {
 
-    display: grid;
+
     height: 25vh;
+    display: grid;
+    grid-template-columns: 50vw, 50vw;
+    grid-template-rows: 20.98475967174678vh, 5.86166471277843vh;
 }
 
 #newsletterCard {
     width: 79.40204963157449vw;
     height: 14.41969519343494vh;
     padding: 0;
-    margin-top: auto;
-    
-    
+    margin-top: auto; 
 
     display: flex;
     flex-direction: column;
