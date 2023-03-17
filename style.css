@@ -34,7 +34,12 @@ section {
 
     min-height: 100%;
     height: 100vh;
-    max-width: 100vw;
+    max-width: 100%;
+}
+
+iframe {
+    height: 100vh;
+    width: 100vw;
 }
 
 a, h2, h3, h4, h5, p, i, span, label, button,::placeholder{
