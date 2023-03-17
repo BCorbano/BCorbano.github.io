@@ -629,8 +629,25 @@ span {
 }
 
 #navFooter {
+    background-color: #BFA887;
+
     display: flex;
     flex-direction: column;
+
+    grid-row: 1 /  span 2;
+    grid-column: 1 / span 2;
+}
+
+.social{
+    background-color:aliceblue;
+
+    display: flex;
+    grid-row: 1 / span  2;
+    grid-column: 2 / span 3;
+}
+
+#credits {
+    background-color: #FCBB4A;
 }
 
 .footer {
@@ -653,11 +670,10 @@ span {
 }
 #footerDown {
 
-
     height: 25vh;
     display: grid;
-    grid-template-columns: 50vw, 50vw;
-    grid-template-rows: 20.98475967174678vh, 5.86166471277843vh;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 20.98475967174678%, auto;
 }
 
 #newsletterCard {
@@ -686,10 +702,6 @@ span {
     margin: 0;
     text-align: center;
     padding-left: 18%;
-}
-
-.social{
-    display: flex;
 }
 
 #navP {
