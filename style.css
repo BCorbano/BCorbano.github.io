@@ -717,13 +717,14 @@ span {
 }
 
 #credits {
-    grid-column: 1 /  4;
-    background-color: #FCBB4A;
+    grid-column: 1 /  -1;
+
 }
 
 #creditP {
     font-weight: 200;
     text-align: center;
+    margin-top: 0;
 }
 
 hr {
