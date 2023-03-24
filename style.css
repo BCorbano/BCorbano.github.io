@@ -646,10 +646,6 @@ span {
     grid-column: 2 / span 3;
 }
 
-#credits {
-    background-color: #FCBB4A;
-}
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -669,11 +665,12 @@ span {
     height: 25vh;
 }
 #footerDown {
+    display: grid;
+    grid-template-columns:  15.698314559159819%  30.06690946048954%  38.53646142119082%  15.698314559159819%;
+    grid-template-rows: 20.98475967174678% auto;
+    justify-items: center;
 
     height: 25vh;
-    display: grid;
-    grid-template-columns: 50%, 50%;
-    grid-template-rows: 20.98475967174678%, auto;
 }
 
 #newsletterCard {
@@ -717,6 +714,11 @@ span {
 #redesP {
     font-size: 1.875rem;
     font-weight: 300;
+}
+
+#credits {
+    grid-column: 1 /  4;
+    background-color: #FCBB4A;
 }
 
 #creditP {
