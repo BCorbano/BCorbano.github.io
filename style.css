@@ -545,7 +545,7 @@ span {
     font-size: 1.6875rem;
 }
 
-.fa-xmark, .fa-chevron-left, .fa-chevron-up {
+.fa-xmark, .fa-chevron-left {
     font-size: 6.5vh;
     padding-left: 80%;
     margin-right: 2vw;
@@ -556,8 +556,8 @@ span {
 }
 
 #setaFooter {
-    bottom: 44.54865181711606vh;
-    right: 89.98898958245109vw;
+    grid-area: seta;
+    font-size: 5.6vh;
 }
 
 #topIcons {
@@ -569,7 +569,7 @@ span {
 .fa-facebook, .fa-instagram, .fa-youtube {
     color: #FFDEAE;
     font-size: 4.22039859320047vh;
-    padding-right: 1.8rem;
+
 }
 
 #btnIcon{
@@ -591,13 +591,13 @@ span {
     flex-wrap: wrap;
 }
 
-#appointment {
+#testimonial {
     height: 50vh;
     width: 100vw;
     margin-bottom: auto;
 }
 
-#appointmentCard {
+#testimonialCard {
     width: 89.14203438638096vw;
     height: 43.72801875732708vh;
     padding-right: 6.35216397052596vw;
@@ -605,25 +605,25 @@ span {
     margin-top: 0;
 }
 
-.appointmentPhoto {
+.testimonialPhoto {
     background-color: aliceblue;
     border-radius: 50%;
     width: 19.85051240789363vw;
     height: 15.65416178194607vh;
 }
 
-.appointmentName {
+.testimonialName {
     color: #FCBB4A;
     line-height: 2.1975em;
     font-size: 1.875em;
 }
 
-.appointmentTitle {
+.testimonialTitle {
     line-height: 1.318125em;
     font-size: 1.125em;
 }
 
-.appointmentP {
+.testimonialP {
     line-height: 1.904375em;
     font-size: 1.625em;
 }
@@ -634,22 +634,27 @@ span {
     display: flex;
     flex-direction: column;
 
-    grid-row: 1 /  span 2;
-    grid-column: 1 /  span 2;
+    grid-area: nav;
 }
 
 .social{
     background-color:aliceblue;
 
     display: flex;
-    grid-row: 1 / span  2;
-    grid-column: 3 / span 3;
+    flex-direction: column;
+    grid-area: social;
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 
+    "seta . . . ."
+    ". newsletter newsletter newsletter ."
+    ". nav . social ."
+    ". credits credits credits ."
+    ;
+    grid-template-columns: 11.43389514694673% 26.04387227915643% 14.60997713220971% 38.11298382315576% 11.43389514694673%;
+    grid-template-rows: 16.88159437280188% 29.54279015240328% 42.67291910902696% 11.48886283704572%;
 
     background-color: #5F6232; 
     width: 100vw;
@@ -659,19 +664,6 @@ span {
     position: fixed;
 }
 
-#footerUp {
-
-    display: flex;
-    height: 25vh;
-}
-#footerDown {
-    display: grid;
-    grid-template-columns:  15.698314559159819%  30.06690946048954%  38.53646142119082%  15.698314559159819%;
-    grid-template-rows: 20.98475967174678% auto;
-    justify-items: center;
-
-    height: 25vh;
-}
 
 #newsletterCard {
     width: 79.40204963157449vw;
@@ -683,6 +675,7 @@ span {
     flex-direction: column;
     flex-wrap: wrap;
     
+    grid-area: newsletter;
 }
 #newsletterLabel {
     text-transform: uppercase;
@@ -699,6 +692,7 @@ span {
     margin: 0;
     text-align: center;
     padding-left: 18%;
+
 }
 
 #navP {
@@ -717,8 +711,7 @@ span {
 }
 
 #credits {
-    grid-column: 1 /  -1;
-
+    grid-area: credits;
 }
 
 #creditP {
