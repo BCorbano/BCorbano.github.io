@@ -354,9 +354,8 @@ ul {
 
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+
     padding-top: 3.99296600234467vh;
     padding-bottom: 4.08997955010225vh;
 
@@ -364,6 +363,39 @@ form {
     
     background-color: #384C2C;
     border-radius: 0.75rem;
+}
+
+#cttForm {
+    display: grid;
+    grid-template-areas: 
+    ". . ."
+    ". assunto ."
+    ". id ."
+    ". email ."
+    ". msg ."
+    ". submit ."
+    ". . ."
+    ;
+    grid-template-rows:auto 13.62179487179487% 15.38461538461538% 16.34615384615385% 38.62179487179487% 10.41666666666667% auto;
+    grid-template-columns: 10.04566210045662% 81.27853881278539% 8.44748858447489%;
+}
+#cttAssunto {
+    grid-area: assunto;
+}
+#cttId {
+    grid-area: id;
+}
+#cttEmail {
+    grid-area: email;
+}
+#cttMsg {
+    grid-area: msg;
+}
+#cttSubmit {
+    grid-area: submit;
+    padding-right: 0;
+    margin: 0;
+    justify-self: end;
 }
 
  #subject {
@@ -375,6 +407,8 @@ form {
 	background-position: 98% center;
 	background-repeat:repeat;
 	outline: none;
+
+    padding-left: 0;
  }
 
 option {
@@ -403,11 +437,12 @@ input, textarea, select:focus {
 .input {
     display: flex; 
     flex-direction: column;
-    
+
     gap: 0.625rem;
 }
 
 .inputLabel {
+    text-align: start;
     font-weight: 200;
     font-size: 1.625rem;
     line-height: 1.5rem;
@@ -418,7 +453,7 @@ input, textarea, select:focus {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0;    
+    padding: 0;
 
     width: 74.07046667231303vw;
     max-height: 21.94021101992966vh;
