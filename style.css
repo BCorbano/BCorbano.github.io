@@ -701,19 +701,27 @@ span {
     padding: 0;
     margin-top: auto; 
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
     grid-area: newsletter;
+
+    display: grid;
+    grid-template-areas:
+    ". . . ."
+    ". label label ."
+    ". input button ."
+    ". . . ."
+    ;
 }
 #newsletterLabel {
     text-transform: uppercase;
     text-align: center;
+
+    grid-area: label;
 }
 #newsletterEmail {
     width: 47.64122977894469vw;
     height: 6.21336459554513vh;
+
+    grid-area: input;
 }
 #newsletterSubmit {
     text-transform: uppercase;
@@ -723,6 +731,7 @@ span {
     text-align: center;
     padding-left: 18%;
 
+    grid-area: button;
 }
 
 #navP {
