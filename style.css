@@ -557,7 +557,9 @@ span {
 
 #setaFooter {
     grid-area: seta;
-    font-size: 5.6vh;
+    font-size: 5vh;
+    padding-left: 10%;
+    padding-top: 5%;
 }
 
 #topIcons {
@@ -595,51 +597,78 @@ span {
     height: 50vh;
     width: 100vw;
     margin-bottom: auto;
+
 }
 
 #testimonialCard {
     width: 89.14203438638096vw;
     height: 43.72801875732708vh;
-    padding-right: 6.35216397052596vw;
-    padding-bottom: 3.98593200468933vh;
-    margin-top: 0;
+    margin-right: 6.56390276954349vw;
+    margin-left: 5.71694757347336vw;
+    margin-bottom: 3.46869871043376vh;
+    margin-top: 2.34466588511137vh;
+
+    display: grid;
+    grid-template-areas: 
+    ". . . ."
+    ". foto nome ."
+    ". foto titulo ."
+    ". hr hr ."
+    ". texto texto ."
+    ". . . ."
+    ;
+    grid-template-rows: 8.31099195710456% 14.74530831099196% 23.32439678284182% auto 49.06166219839142% 4.82573726541555%;
+    grid-template-columns: 6.17577197149644% 37.52969121140143% 54.39429928741093% 4.51306413301663%;
+
 }
 
 .testimonialPhoto {
+    grid-area: foto;
+
     background-color: aliceblue;
     border-radius: 50%;
     width: 19.85051240789363vw;
     height: 15.65416178194607vh;
+    margin-left: 3.80047505938242%;
+    margin-right: 4.03800475059382%;
+
 }
 
 .testimonialName {
+    grid-area: nome;
+
     color: #FCBB4A;
     line-height: 2.1975em;
     font-size: 1.875em;
 }
 
 .testimonialTitle {
+    grid-area: titulo;
+
     line-height: 1.318125em;
     font-size: 1.125em;
 }
 
 .testimonialP {
-    line-height: 1.904375em;
+    grid-area: texto;
+
+    margin: 0;
+    padding-right: 1.66270783847981%;
+    padding-left: 3.08788598574822%;
+    line-height: 3.57209847596717vh;
     font-size: 1.625em;
+    text-justify: center;
+    text-align: justify;
 }
 
 #navFooter {
-    background-color: #BFA887;
-
     display: flex;
     flex-direction: column;
 
     grid-area: nav;
 }
 
-.social{
-    background-color:aliceblue;
-
+.social {
     display: flex;
     flex-direction: column;
     grid-area: social;
@@ -662,6 +691,7 @@ span {
     margin: auto;
     bottom: 0;
     position: fixed;
+
 }
 
 
@@ -721,6 +751,8 @@ span {
 }
 
 hr {
+    grid-area: hr;
+
     width: 79.40204963157449vw;    
     border-color: #FFDEAE;
 }
