@@ -701,12 +701,23 @@ span {
     flex-direction: column;
 
     grid-area: nav;
+
 }
 
 .social {
     display: flex;
     flex-direction: column;
     grid-area: social;
+}
+
+#socialIcons {
+    display: flex;
+    align-content: center;
+    column-gap: 5.24053527568392vw;
+    margin-top: 1.10679953106682vh;
+}
+.socialA {
+    margin: 0;
 }
 
 .footer {
@@ -745,10 +756,13 @@ span {
     ". input button ."
     ". . . ."
     ;
+
+ 
 }
 #newsletterLabel {
     text-transform: uppercase;
     text-align: center;
+    white-space: nowrap; 
 
     grid-area: label;
 }
@@ -772,16 +786,23 @@ span {
 #navP {
     font-size: 2rem;
     font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 3.63423212192263vh;
 }
 
 .navA {
     font-size: 1.5rem;
     font-weight: 400;
+    margin-bottom: 1.78956623681125vh;
+    margin-top: -0.75vh;
 }
 
-#redesP {
+#socialP {
     font-size: 1.875rem;
     font-weight: 300;
+
+    margin-bottom: 0;
+    margin-top: 3.63423212192263vh;
 }
 
 #credits {
